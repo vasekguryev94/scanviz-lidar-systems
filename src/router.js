@@ -1,7 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
+import Products from './views/Products.vue'
+import Applications from './views/Applications.vue'
 import Soft from './views/Soft.vue'
+import Contacts from './views/Contacts.vue'
 
 Vue.use(Router)
 
@@ -15,9 +18,24 @@ export default new Router({
       component: Home
     },
     {
+      path: '/products',
+      name: 'products',
+      component: Products
+    },
+    {
+      path: '/applications',
+      name: 'applications',
+      component: Applications
+    },
+    {
       path: '/soft',
       name: 'soft',
       component: Soft
+    },
+    {
+      path: '/contacts',
+      name: 'contacts',
+      component: Contacts
     },
     {
       path: '/about',
