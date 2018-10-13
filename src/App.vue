@@ -7,12 +7,12 @@
       </div>
       <div class="heder-right">
         <div class="header-nav">
-          <router-link to="/">{{ $t("content.header.home") }}</router-link>
-          <router-link to="/products">{{ $t("content.header.products") }}</router-link>
-          <router-link to="/applications">{{ $t("content.header.applications") }}</router-link>
-          <router-link to="/soft">{{ $t("content.header.soft") }}</router-link>
-          <router-link to="/contacts">{{ $t("content.header.contacts") }}</router-link>
-          <router-link to="/about">{{ $t("content.header.about") }}</router-link>
+          <router-link to="/">{{ $t("content.header.home").toUpperCase() }}</router-link>
+          <router-link to="/products">{{ $t("content.header.products").toUpperCase() }}</router-link>
+          <router-link to="/applications">{{ $t("content.header.applications").toUpperCase() }}</router-link>
+          <router-link to="/soft">{{ $t("content.header.soft").toUpperCase() }}</router-link>
+          <router-link to="/contacts">{{ $t("content.header.contacts").toUpperCase() }}</router-link>
+          <router-link to="/about">{{ $t("content.header.about").toUpperCase() }}</router-link>
         </div>
         <div class="header-telephone">
           <img src='./assets/telephone_up_24x24.png' name="telephone_up">
@@ -33,16 +33,23 @@
   color: #2c3e50;
 }
 #nav {
+  + * {
+    margin-top: 80px;
+    overflow: auto;
+  }
+  width: 100%;
   height: 80px;
+  position: fixed;
+  top: 0;
   display: flex;
   justify-content: space-between;
   background-image: linear-gradient(#C5C6C6, #EDEDED, #FEFEFE, #EDEDED, #C5C6C6);
   background-color: #EDEDED;
   a {
-    font-weight: bold;
     color: grey;
     text-decoration: none;
     padding: 6px 10px;
+    white-space: nowrap;
     &.router-link-exact-active,
     &:hover,
     &:active,
