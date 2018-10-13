@@ -1,4 +1,4 @@
-# hello-world
+# scanviz-lidar-systems
 
 ## Project setup
 ```
@@ -24,4 +24,4 @@ npm run test
 ```
 npm run lint
 ```
-"# scanviz-lidar-systems" 
+"# scanviz-lidar-systems"
