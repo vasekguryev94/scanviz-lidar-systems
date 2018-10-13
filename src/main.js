@@ -5,6 +5,9 @@ import router from './router'
 import store from './store'
 import content from './locale'
 
+import 'bootstrap'
+import 'bootstrap/dist/css/bootstrap.css'
+
 Vue.config.productionTip = false
 Vue.use(VueI18n)
 
