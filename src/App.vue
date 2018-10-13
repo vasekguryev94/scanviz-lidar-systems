@@ -5,7 +5,7 @@
         <img src='./assets/Sphere_40x40.png' name="sphere">
         <label for="sphere">ScanViz Lidar Systems</label>
       </div>
-      <div class="heder-right">
+      <div class="header-right">
         <div class="header-nav">
           <router-link to="/">{{ $t("content.header.home").toUpperCase() }}</router-link>
           <router-link to="/products">{{ $t("content.header.products").toUpperCase() }}</router-link>
@@ -67,7 +67,7 @@
   .header-logo,
   .header-nav,
   .header-telephone,
-  .heder-right {
+  .header-right {
     display: flex;
     align-items: center;
     justify-content: center;
