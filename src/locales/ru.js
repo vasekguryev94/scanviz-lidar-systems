@@ -36,12 +36,13 @@ export default {
       emailForm: 'E-mail*',
       messageForm: 'Сообщение',
       buttonSend: 'Отправить',
-      p1: 'Если у вас возникли вопросы и предложения',
+      p1: 'Если у Вас возникли вопросы и предложения, вы можете связаться с нами, заполнив данную форму связи или с помощью контактов.',
       addressLabel: 'Адрес',
       address: '',
-      phoneLabel: '',
-      phone: '',
-      emailLabel: ''
+      phoneLabel: 'Телефон',
+      phone: '+7 (495) 589-20-15',
+      emailLabel: 'E-mail',
+      email: 'info@antteq.com'
     }
   }
 }
