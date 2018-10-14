@@ -1,9 +1,114 @@
 <template>
     <div>
-        <carousel>
-        </carousel>
-        <!--<footerElement>-->
-        <!--</footerElement>-->
+        <carousel></carousel>
+        <div class="container home">
+          <div class="col home-content">
+            <div class="text-center">
+              <h1>{{ $t("content.home.mobileLaserScan").toUpperCase() }}</h1>
+              <p>{{ $t("content.home.mobileLaserScanThis") }}</p>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 col-xs-12">
+                <img src="../assets/home_1.png" alt="">
+              </div>
+              <div class="col-sm-6 col-xs-12">
+                <img src="../assets/home_2.png" alt="">
+              </div>
+            </div>
+            <div class="text-center">
+              <h1>{{ $t("content.home.scanVizThis").toUpperCase() }}</h1>
+              <p>{{ $t("content.home.scanVizThisContent") }}</p>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <img src="../assets/cameras.png" alt="">
+              </div>
+              <div class="col-12 row mount">
+                <div class="col-md col-sm-6 col-xs-12">
+                  <img src="../assets/mount_1.png" alt="">
+                  <h3>{{ $t("content.home.car").toUpperCase() }}</h3>
+                  <p>{{ $t("content.home.carContent") }}</p>
+                </div>
+                <div class="col-md col-sm-6 col-xs-12">
+                  <img src="../assets/mount_2.png" alt="">
+                  <h3>{{ $t("content.home.drone").toUpperCase() }}</h3>
+                  <p>{{ $t("content.home.carContent") }}</p>
+                </div>
+                <div class="col-md col-sm-6 col-xs-12">
+                  <img src="../assets/mount_3.png" alt="">
+                  <h3>{{ $t("content.home.withoutPilot").toUpperCase() }}</h3>
+                  <p>{{ $t("content.home.carContent") }}</p>
+                </div>
+                <div class="col-md col-sm-6 col-xs-12">
+                  <img src="../assets/mount_4.png" alt="">
+                  <h3>{{ $t("content.home.boat").toUpperCase() }}</h3>
+                  <p>{{ $t("content.home.carContent") }}</p>
+                </div>
+                <div class="col-md col-sm-6 col-xs-12">
+                  <img src="../assets/mount_5.png" alt="">
+                  <h3>{{ $t("content.home.backpack").toUpperCase() }}</h3>
+                  <p>{{ $t("content.home.carContent") }}</p>
+                </div>
+              </div>
+            </div>
+            <div class="text-center">
+              <h1>{{ $t("content.home.areasOfUse").toUpperCase() }}</h1>
+            </div>
+            <div class="row areas-of-use">
+              <div class="col-12 row">
+                <div class="col-md col-sm-6 col-xs-12">
+                  <img src="../assets/areas-of-use_1.png" alt="">
+                  <p>{{ $t("content.home.carContent") }}</p>
+                </div>
+                <div class="col-md col-sm-6 col-xs-12">
+                  <img src="../assets/areas-of-use_2.png" alt="">
+                  <p>{{ $t("content.home.carContent") }}</p>
+                </div>
+                <div class="col-md col-sm-6 col-xs-12">
+                  <img src="../assets/areas-of-use_3.png" alt="">
+                  <p>{{ $t("content.home.carContent") }}</p>
+                </div>
+                <div class="col-md col-sm-6 col-xs-12">
+                  <img src="../assets/areas-of-use_4.png" alt="">
+                  <p>{{ $t("content.home.carContent") }}</p>
+                </div>
+                <div class="col-md col-sm-6 col-xs-12">
+                  <img src="../assets/areas-of-use_5.png" alt="">
+                  <p>{{ $t("content.home.carContent") }}</p>
+                </div>
+                <div class="col-md col-sm-6 col-xs-12">
+                  <img src="../assets/areas-of-use_6.png" alt="">
+                  <p>{{ $t("content.home.carContent") }}</p>
+                </div>
+              </div>
+              <div class="col-12 row">
+                <div class="col-md col-sm-6 col-xs-12">
+                  <img src="../assets/areas-of-use_7.png" alt="">
+                  <p>{{ $t("content.home.carContent") }}</p>
+                </div>
+                <div class="col-md col-sm-6 col-xs-12">
+                  <img src="../assets/areas-of-use_8.png" alt="">
+                  <p>{{ $t("content.home.carContent") }}</p>
+                </div>
+                <div class="col-md col-sm-6 col-xs-12">
+                  <img src="../assets/areas-of-use_9.png" alt="">
+                  <p>{{ $t("content.home.carContent") }}</p>
+                </div>
+                <div class="col-md col-sm-6 col-xs-12">
+                  <img src="../assets/areas-of-use_10.png" alt="">
+                  <p>{{ $t("content.home.carContent") }}</p>
+                </div>
+                <div class="col-md col-sm-6 col-xs-12">
+                  <img src="../assets/areas-of-use_11.png" alt="">
+                  <p>{{ $t("content.home.carContent") }}</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <img src="../assets/logos.png" alt="">
+            </div>
+          </div>
+        </div>
     </div>
 </template>
 
@@ -14,7 +119,35 @@ export default {
   name: 'home',
   components: {
     'carousel': Carousel
-    // 'footerElement': Footer
   }
 }
 </script>
+
+<style scoped lang="scss">
+  .home-content {
+    p {
+      text-align: justify;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      background: linear-gradient(to bottom right, #24283B, #2D3B57, #2F4B6A, #2E5E79, #2F6580);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .mount {
+      img {
+        max-width: 170px;
+        max-height: 170px;
+      }
+    }
+    .mount,
+    .areas-of-use {
+      p {
+        text-align: center;
+      }
+    }
+    img {
+      max-width:100%;
+      max-height:100%;
+    }
+  }
+</style>
