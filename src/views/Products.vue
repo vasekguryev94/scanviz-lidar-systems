@@ -2,7 +2,7 @@
   <div class="products">
     <carousel></carousel>
     <div class="container">
-      <div class="col products-content">
+      <div class="col text-center products-content">
         <div class="text-center">
           <h1>{{ $t("content.products.products").toUpperCase() }}</h1>
         </div>

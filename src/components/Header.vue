@@ -12,16 +12,17 @@
               <router-link class="ml-1 ml-xl-0" to="/">{{ $t("content.header.home").toUpperCase() }}</router-link>
               <router-link class="header-products" to="/products">
                 {{ $t("content.header.products").toUpperCase() }}
-                <ul class="header-submenu">
+                <!-- <ul class="header-submenu">
                   <li>меню второго уровня
                   </li>
                   <li>меню второго уровня
                   </li>
                   <li>меню второго уровня
                   </li>
-                </ul>
+                </ul> -->
               </router-link>
-              <router-link to="/applications">{{ $t("content.header.applications").toUpperCase() }}</router-link>
+              <a href="/#areasOfUse">{{ $t("content.header.applications").toUpperCase() }}</a>
+              <!-- <router-link to="/applications">{{ $t("content.header.applications").toUpperCase() }}</router-link> -->
               <router-link to="/soft">{{ $t("content.header.soft").toUpperCase() }}</router-link>
               <router-link to="/contacts">{{ $t("content.header.contacts").toUpperCase() }}</router-link>
               <router-link to="/about">{{ $t("content.header.about").toUpperCase() }}</router-link>
