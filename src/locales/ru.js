@@ -58,6 +58,19 @@ export default {
     soft: {
       software: 'Программное обеспечение',
       ourTask: 'Наша задача - сделать технологию лазерного сканирования понятной и доступной для повсеместного использования'
+    },
+    form: {
+      h1: 'Свяжитесь с нами',
+      nameForm: 'Ваше имя*',
+      emailForm: 'E-mail*',
+      messageForm: 'Сообщение',
+      buttonSend: 'Отправить',
+      p1: 'Если у вас возникли вопросы и предложения',
+      addressLabel: 'Адрес',
+      address: '',
+      phoneLabel: '',
+      phone: '',
+      emailLabel: ''
     }
   }
 }

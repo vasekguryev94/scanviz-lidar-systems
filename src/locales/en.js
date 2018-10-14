@@ -58,6 +58,19 @@ export default {
     soft: {
       software: 'Software',
       ourTask: 'Our task is to make laser scanning technology understandable and accessible for widespread use'
+    },
+    form: {
+      h1: 'Contact us',
+      nameForm: 'Enter name*',
+      emailForm: 'E-mail*',
+      messageForm: 'Message',
+      buttonSend: 'Send',
+      p1: '',
+      addressLabel: 'Address',
+      address: '',
+      phoneLabel: '',
+      phone: '',
+      emailLabel: ''
     }
   }
 }
