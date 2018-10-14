@@ -31,7 +31,7 @@ export default {
       areasOfUse: 'Areas of use'
     },
     form: {
-      h1: 'Свяжитесь с нами',
+      h1: 'Contact us',
       nameForm: 'Enter name*',
       emailForm: 'E-mail*',
       messageForm: 'Message',
