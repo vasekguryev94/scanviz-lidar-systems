@@ -104,6 +104,27 @@
             </div>
           </div>
         </div>
+        <div class="text-center">
+          <h1>{{ $t("content.home.pointCloud").toUpperCase() }}</h1>
+        </div>
+        <div class="row iframe">
+          <div class="col-sm-6 col-12">
+            <iframe src='http://mypointclouds.com/projects/a9ca0348-bc8b-49e9-bc55-ea68d01d2ab3-street'></iframe><br>
+            <a href="http://mypointclouds.com/projects/a9ca0348-bc8b-49e9-bc55-ea68d01d2ab3-street" class="text-center">{{ $t("content.home.street") }}</a>
+          </div>
+          <div class="col-sm-6 col-12">
+            <iframe src='http://mypointclouds.com/projects/a9ca0348-bc8b-49e9-bc55-ea68d01d2ab3-gas%20station'></iframe><br>
+            <a href="http://mypointclouds.com/projects/a9ca0348-bc8b-49e9-bc55-ea68d01d2ab3-gas%20station" class="text-center">{{ $t("content.home.gasStation") }}</a>
+          </div>
+          <div class="col-sm-6 col-12">
+            <iframe src='http://mypointclouds.com/projects/a9ca0348-bc8b-49e9-bc55-ea68d01d2ab3-road'></iframe><br>
+            <a href="http://mypointclouds.com/projects/a9ca0348-bc8b-49e9-bc55-ea68d01d2ab3-road" class="text-center">{{ $t("content.home.road") }}</a>
+          </div>
+          <div class="col-sm-6 col-12">
+            <iframe src='http://mypointclouds.com/projects/a9ca0348-bc8b-49e9-bc55-ea68d01d2ab3-walk%20house'></iframe><br>
+            <a href="http://mypointclouds.com/projects/a9ca0348-bc8b-49e9-bc55-ea68d01d2ab3-walk%20house" class="text-center">{{ $t("content.home.walk") }}</a>
+          </div>
+        </div>
         <div class="row">
           <img src="../assets/logos.png" alt="">
         </div>
@@ -152,6 +173,11 @@ export default {
     img {
       max-width:100%;
       max-height:100%;
+    }
+    .iframe {
+      a {
+        cursor: pointer;
+      }
     }
   }
 </style>

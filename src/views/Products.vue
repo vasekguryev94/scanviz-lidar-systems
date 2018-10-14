@@ -129,7 +129,7 @@
           </div>
         </div>
         <div class="row text-center req-cost justify-content-center align-items-center">
-          <h3>Запросить стоимость</h3>
+          <router-link to="/contacts"><h5>{{ $t("content.products.reqCost").toUpperCase() }}</h5></router-link>
         </div>
       </div>
     </div>
@@ -216,7 +216,7 @@ export default {
       &:hover {
         cursor: pointer;
       }
-      h3 {
+      h5 {
         margin: 0;
       }
     }

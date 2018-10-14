@@ -3,7 +3,7 @@
     <carousel></carousel>
     <div class="contacts container pt-3 pb-3">
 
-      <h1 class="text-center">{{$t('content.form.h1')}}</h1>
+      <h1 class="text-center">{{$t('content.form.h1').toUpperCase()}}</h1>
       <div class="row">
           <div class="col-12 col-sm-5">
               <form>
@@ -45,3 +45,16 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+  .contacts {
+    & > div {
+      padding: 20px 0;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      background: linear-gradient(to bottom right, #24283B, #2D3B57, #2F4B6A, #2E5E79, #2F6580);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+</style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="soft">
     <carousel></carousel>
     <div class="container">
       <div class="col soft-content">
@@ -40,6 +40,9 @@
         <div class="text-center">
           <h1>{{ $t("content.soft.ourTask").toUpperCase() }}</h1>
         </div>
+        <div class="row text-center req-cost justify-content-center align-items-center">
+          <router-link to="/contacts"><h5>{{ $t("content.soft.reqCost").toUpperCase() }}</h5></router-link>
+        </div>
       </div>
     </div>
   </div>
@@ -75,6 +78,21 @@ export default {
       div {
         padding-top: 20px;
         padding-bottom: 20px;
+      }
+    }
+    .req-cost {
+      width: 320px;
+      height: 50px;
+      margin: 20px auto;
+      background: linear-gradient(to bottom right, white, lightgrey);
+      border-radius: 50px;
+      border: solid 1px grey;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      &:hover {
+        cursor: pointer;
+      }
+      h5 {
+        margin: 0;
       }
     }
   }

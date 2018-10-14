@@ -102,7 +102,7 @@ export default {
       &:focus {
         background-image: linear-gradient(#666666, #8D8D8D, #666666);
         background-color: #8D8D8D;
-        color: lightgrey;
+        color: lightgrey!important;
       }
       &:not(:first-child) {
         border-left: 1px solid lightgrey;
