@@ -56,49 +56,49 @@
             </div>
             <div class="row areas-of-use">
               <div class="col-12 row">
-                <div class="col-md col-sm-6 col-xs-12">
+                <div class="col-xl col-sm-4 col-xs-12">
                   <img src="../assets/areas-of-use_1.png" alt="">
                   <p>{{ $t("content.home.carContent") }}</p>
                 </div>
-                <div class="col-md col-sm-6 col-xs-12">
+                <div class="col-xl col-sm-4 col-xs-12">
                   <img src="../assets/areas-of-use_2.png" alt="">
                   <p>{{ $t("content.home.carContent") }}</p>
                 </div>
-                <div class="col-md col-sm-6 col-xs-12">
+                <div class="col-xl col-sm-4 col-xs-12">
                   <img src="../assets/areas-of-use_3.png" alt="">
                   <p>{{ $t("content.home.carContent") }}</p>
                 </div>
-                <div class="col-md col-sm-6 col-xs-12">
+                <div class="col-xl col-sm-4 col-xs-12">
                   <img src="../assets/areas-of-use_4.png" alt="">
                   <p>{{ $t("content.home.carContent") }}</p>
                 </div>
-                <div class="col-md col-sm-6 col-xs-12">
+                <div class="col-xl col-sm-4 col-xs-12">
                   <img src="../assets/areas-of-use_5.png" alt="">
                   <p>{{ $t("content.home.carContent") }}</p>
                 </div>
-                <div class="col-md col-sm-6 col-xs-12">
+                <div class="col-xl col-sm-4 col-xs-12">
                   <img src="../assets/areas-of-use_6.png" alt="">
                   <p>{{ $t("content.home.carContent") }}</p>
                 </div>
               </div>
               <div class="col-12 row">
-                <div class="col-md col-sm-6 col-xs-12">
+                <div class="col-xl col-sm-4 col-xs-12">
                   <img src="../assets/areas-of-use_7.png" alt="">
                   <p>{{ $t("content.home.carContent") }}</p>
                 </div>
-                <div class="col-md col-sm-6 col-xs-12">
+                <div class="col-xl col-sm-4 col-xs-12">
                   <img src="../assets/areas-of-use_8.png" alt="">
                   <p>{{ $t("content.home.carContent") }}</p>
                 </div>
-                <div class="col-md col-sm-6 col-xs-12">
+                <div class="col-xl col-sm-4 col-xs-12">
                   <img src="../assets/areas-of-use_9.png" alt="">
                   <p>{{ $t("content.home.carContent") }}</p>
                 </div>
-                <div class="col-md col-sm-6 col-xs-12">
+                <div class="col-xl col-sm-4 col-xs-12">
                   <img src="../assets/areas-of-use_10.png" alt="">
                   <p>{{ $t("content.home.carContent") }}</p>
                 </div>
-                <div class="col-md col-sm-6 col-xs-12">
+                <div class="col-xl col-sm-4 col-xs-12">
                   <img src="../assets/areas-of-use_11.png" alt="">
                   <p>{{ $t("content.home.carContent") }}</p>
                 </div>
