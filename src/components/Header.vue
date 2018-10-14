@@ -1,34 +1,67 @@
 <template>
-  <div id="nav">
-    <div class="header-logo">
-      <img src='../assets/Sphere_40x40.png' name="sphere">
-      <label for="sphere">ScanViz Lidar Systems</label>
-    </div>
-    <div class="header-right">
-      <div class="header-nav">
-        <router-link to="/">{{ $t("content.header.home").toUpperCase() }}</router-link>
-        <router-link class="header-products" to="/products">
-          {{ $t("content.header.products").toUpperCase() }}
-          <ul class="header-submenu">
-            <li>меню второго уровня
-            </li>
-            <li>меню второго уровня
-            </li>
-            <li>меню второго уровня
-            </li>
-          </ul>
-        </router-link>
-        <router-link to="/applications">{{ $t("content.header.applications").toUpperCase() }}</router-link>
-        <router-link to="/soft">{{ $t("content.header.soft").toUpperCase() }}</router-link>
-        <router-link to="/contacts">{{ $t("content.header.contacts").toUpperCase() }}</router-link>
-        <router-link to="/about">{{ $t("content.header.about").toUpperCase() }}</router-link>
+  <div class="container header pt-3 pb-3">
+    <div id="nav" class="row align-items-center">
+      <div class="col-sm-4 d-none d-sm-inline-flex">
+        <img src='../assets/logo-header.png' class="icon img-fluid" name="sphere">
       </div>
-      <div class="header-telephone">
-        <img src='../assets/phone_header.png' class="icon" name="phone_header">
-        <label for="phone_header">(123) 456-789</label>
+      <div class="header-right col-12 col-sm-8">
+        <div class="row align-items-center">
+          <div class="header-nav col-sm-9">
+            <div class="row float-xl-right">
+
+              <router-link class="ml-1 ml-xl-0" to="/">{{ $t("content.header.home").toUpperCase() }}</router-link>
+              <router-link class="header-products" to="/products">
+                {{ $t("content.header.products").toUpperCase() }}
+                <ul class="header-submenu">
+                  <li>меню второго уровня
+                  </li>
+                  <li>меню второго уровня
+                  </li>
+                  <li>меню второго уровня
+                  </li>
+                </ul>
+              </router-link>
+              <router-link to="/applications">{{ $t("content.header.applications").toUpperCase() }}</router-link>
+              <router-link to="/soft">{{ $t("content.header.soft").toUpperCase() }}</router-link>
+              <router-link to="/contacts">{{ $t("content.header.contacts").toUpperCase() }}</router-link>
+              <router-link to="/about">{{ $t("content.header.about").toUpperCase() }}</router-link>
+            </div>
+          </div>
+          <div class="header-telephone col-sm-3">
+            <img src='../assets/phone_header.png' class="icon" name="phone_header">
+            <label for="phone_header">(123) 456-789</label>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+
+  <!--<div class="container header pt-m pb-m">-->
+    <!--<div class="row">-->
+      <!--<div class="col-sm-3">-->
+        <!--<img src='../assets/logo-header.png' class="icon" name="sphere">-->
+      <!--</div>-->
+      <!--<div class="col-sm-7">-->
+        <!--<router-link to="/">{{ $t("content.header.home").toUpperCase() }}</router-link>-->
+        <!--<router-link class="header-products" to="/products">-->
+        <!--{{ $t("content.header.products").toUpperCase() }}-->
+        <!--<ul class="header-submenu">-->
+        <!--<li>меню второго уровня-->
+        <!--</li>-->
+        <!--<li>меню второго уровня-->
+        <!--</li>-->
+        <!--<li>меню второго уровня-->
+        <!--</li>-->
+        <!--</ul>-->
+        <!--</router-link>-->
+        <!--<router-link to="/applications">{{ $t("content.header.applications").toUpperCase() }}</router-link>-->
+        <!--<router-link to="/soft">{{ $t("content.header.soft").toUpperCase() }}</router-link>-->
+        <!--<router-link to="/contacts">{{ $t("content.header.contacts").toUpperCase() }}</router-link>-->
+        <!--<router-link to="/about">{{ $t("content.header.about").toUpperCase() }}</router-link>-->
+      <!--</div>-->
+      <!--<div class="col-sm-2"></div>-->
+    <!--</div>-->
+  <!--</div>-->
 </template>
 
 <script>
@@ -37,19 +70,26 @@ export default {
 </script>
 
 <style lang="scss">
+
+  .header {
+    background-image: linear-gradient(#C5C6C6, #EDEDED, #FEFEFE, #EDEDED, #C5C6C6);
+    background-color: #EDEDED;
+    max-width: unset!important;
+  }
+
   #nav {
     // + * {
     //   margin-top: 80px;
     //   overflow: auto;
     // }
-    width: 100%;
-    height: 80px;
+    /*width: 100%;*/
+    /*height: 80px;*/
     // position: fixed;
     // top: 0;
-    display: flex;
-    justify-content: space-between;
-    background-image: linear-gradient(#C5C6C6, #EDEDED, #FEFEFE, #EDEDED, #C5C6C6);
-    background-color: #EDEDED;
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    /*background-image: linear-gradient(#C5C6C6, #EDEDED, #FEFEFE, #EDEDED, #C5C6C6);*/
+    /*background-color: #EDEDED;*/
     a {
       color: grey;
       text-decoration: none;
@@ -73,16 +113,16 @@ export default {
     .header-nav,
     .header-telephone,
     .header-right {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 5px 20px;
-      img {
-        margin: 5px 10px;
-      }
-      label {
-        margin: 0;
-      }
+      /*display: flex;*/
+      /*align-items: center;*/
+      /*justify-content: center;*/
+      /*margin: 5px 20px;*/
+      /*img {*/
+        /*margin: 5px 10px;*/
+      /*}*/
+      /*label {*/
+        /*margin: 0;*/
+      /*}*/
     }
     .header-nav {
       &.header-submenu:after {
@@ -129,7 +169,7 @@ export default {
       }
     }
     .icon {
-        height: 32px;
+        max-height: 48px;
     }
   }
 </style>

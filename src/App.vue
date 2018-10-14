@@ -14,6 +14,12 @@ export default {
   components: {
     'footerElement': Footer,
     'headerElement': Header
+  },
+  created () {
+    // let ckeditor = document.createElement('script')
+    // ckeditor.setAttribute('src', 'https://cdn.emailjs.com/sdk/2.2.4/email.min.js')
+    // document.head.appendChild(ckeditor)
+    // emailjs.init('user_2Yie6jIsgYdc4eUGQvvLJ')
   }
 }
 </script>
@@ -23,55 +29,18 @@ export default {
   font-family: 'Arial', Helvetica, Avenir, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  /*text-align: center;*/
   color: #2c3e50;
 }
 
-// offsets list
-$offset-sizes: ( s: 8px, m: 16px, l: 24px );
-// sides list
-$sides: ( t: top, b: bottom, l: left, r: right);
-
-// generate padding and margin classes
-@mixin offsets($offset-sizes, $sides){
-  @each $offsetSuffix, $size in $offset-sizes {
-    @each $sideSuffix, $side in $sides {
-      .p#{$sideSuffix}-#{$offsetSuffix} {
-        padding-#{$side}: $size;
-      }
-      .m#{$sideSuffix}-#{$offsetSuffix} {
-        margin-#{$side}: $size;
-      }
-    }
-    .p-#{$offsetSuffix}{
-      padding: $size;
-    }
-    .m-#{$offsetSuffix}{
-      margin: $size;
-    }
-  }
+a:hover {
+  color: #2c3e50!important;
+  text-decoration: none!important;
 }
 
-// generate no padding no margin classes
-@mixin noOffsets($sides) {
-  @each $sideSuffix, $side in $sides {
-    .no-p#{$sideSuffix} {
-      padding-#{$side}: 0;
-    }
-    .no-m#{$sideSuffix} {
-      margin-#{$side}: 0;
-    }
-  }
-  // no-padding
-  .np {
-    padding: 0;
-  }
-  // no-margin
-  .nm {
-    margin: 0;
-  }
+a {
+  color: #2c3e50!important;
+  text-decoration: none!important;
 }
 
-@include offsets($offset-sizes, $sides);
-@include noOffsets($sides);
 </style>

@@ -1,7 +1,7 @@
 <template>
     <div>
         <carousel></carousel>
-        <div class="container home">
+        <div class="container home text-center">
           <div class="col home-content">
             <div class="text-center">
               <h1>{{ $t("content.home.mobileLaserScan").toUpperCase() }}</h1>

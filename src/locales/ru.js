@@ -29,6 +29,19 @@ export default {
       backpack: 'Рюкзак',
       carContent: 'Устройство легко устанавливается на крышу автомобиля',
       areasOfUse: 'Области применения'
+    },
+    form: {
+      h1: 'Свяжитесь с нами',
+      nameForm: 'Ваше имя*',
+      emailForm: 'E-mail*',
+      messageForm: 'Сообщение',
+      buttonSend: 'Отправить',
+      p1: 'Если у вас возникли вопросы и предложения',
+      addressLabel: 'Адрес',
+      address: '',
+      phoneLabel: '',
+      phone: '',
+      emailLabel: ''
     }
   }
 }
