@@ -21,8 +21,8 @@
                     |
                     <router-link to="/products">{{ $t("content.header.products").toUpperCase() }}</router-link>
                     |
-                    <a href="/#areasOfUse">{{ $t("content.header.applications").toUpperCase() }}</a>
-                    <!-- <router-link to="/applications">{{ $t("content.header.applications").toUpperCase() }}</router-link> -->
+                    <!-- <a href="/#areasOfUse">{{ $t("content.header.applications").toUpperCase() }}</a> -->
+                    <router-link to="/applications">{{ $t("content.header.applications").toUpperCase() }}</router-link>
                 </div>
                 <div class="col-sm-12">
                     <router-link to="/soft">{{ $t("content.header.soft").toUpperCase() }}</router-link>

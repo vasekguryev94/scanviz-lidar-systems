@@ -51,7 +51,7 @@
             </div>
           </div>
         </div>
-        <div class="text-center" id="areasOfUse">
+        <div class="text-center">
           <h1>{{ $t("content.home.areasOfUse").toUpperCase() }}</h1>
         </div>
         <div class="row areas-of-use">

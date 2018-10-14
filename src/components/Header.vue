@@ -21,14 +21,23 @@
                   </li>
                 </ul> -->
               </router-link>
-              <a href="/#areasOfUse">{{ $t("content.header.applications").toUpperCase() }}</a>
-              <!-- <router-link to="/applications">{{ $t("content.header.applications").toUpperCase() }}</router-link> -->
+              <!-- <a href="/#areasOfUse">{{ $t("content.header.applications").toUpperCase() }}</a> -->
+              <router-link to="/applications">{{ $t("content.header.applications").toUpperCase() }}</router-link>
               <router-link to="/soft">{{ $t("content.header.soft").toUpperCase() }}</router-link>
               <router-link to="/contacts">{{ $t("content.header.contacts").toUpperCase() }}</router-link>
               <router-link to="/about">{{ $t("content.header.about").toUpperCase() }}</router-link>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  {{locale}}
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a @click="changeLocale('en')" class="dropdown-item">EN</a>
+                  <a @click="changeLocale('ru')" class="dropdown-item">RU</a>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="header-telephone col-sm-3">
+          <div class="header-phone col-sm-3">
             <img src='../assets/phone_header.png' class="icon" name="phone_header">
             <label for="phone_header">(123) 456-789</label>
           </div>
@@ -67,6 +76,18 @@
 
 <script>
 export default {
+  data () {
+    return {
+      locale: 'EN'
+    }
+  },
+  methods: {
+    changeLocale: function (locale) {
+      let self = this
+      self.$set(self, 'locale', locale.toUpperCase())
+      self._i18n.locale = locale
+    }
+  }
 }
 </script>
 
@@ -112,7 +133,7 @@ export default {
     }
     .header-logo,
     .header-nav,
-    .header-telephone,
+    .header-phone,
     .header-right {
       /*display: flex;*/
       /*align-items: center;*/
