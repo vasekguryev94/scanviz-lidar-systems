@@ -1,11 +1,13 @@
 <template>
     <div class="container footer pt-m pb-m">
-        <div class="row footer__content">
+        <div class="row align-items-center">
             <div class="col-sm-4 text-left align-items-center">
-                <img src="../assets/Sphere_40x40.png" alt="" class="float-left pr-s">
-                <span>
-                    {{ $t("content.footer.logoSpan") }}
-                </span>
+                <div class="row">
+                    <img src="../assets/logo-footer.png" alt="" class="icon-big">
+                </div>
+                <div class="row pt-l">
+                    <span class="small">{{ $t("content.footer.copyright")}}</span>
+                </div>
             </div>
             <div class="col-sm-4">
                 <div class="row text-center">{{ $t("content.footer.subscribe") }}</div>
@@ -46,11 +48,16 @@ export default {
         max-width: unset;
     }
 
-    .footer__content {
-
-    }
-
     .icon {
         height: 32px;
     }
+
+    .icon-big {
+        height: 64px;
+    }
+
+    .small {
+        font-size: 12px;
+    }
+
 </style>
