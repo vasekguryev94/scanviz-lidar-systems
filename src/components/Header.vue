@@ -18,12 +18,13 @@
             </li>
           </ul>
         </router-link>
-        <router-link to="/applications">{{ $t("content.header.applications").toUpperCase() }}</router-link>
+        <a href="/#areasOfUse">{{ $t("content.header.applications").toUpperCase() }}</a>
+        <!-- <router-link to="/#areasOfUse">{{ $t("content.header.applications").toUpperCase() }}</router-link> -->
         <router-link to="/soft">{{ $t("content.header.soft").toUpperCase() }}</router-link>
         <router-link to="/contacts">{{ $t("content.header.contacts").toUpperCase() }}</router-link>
         <router-link to="/about">{{ $t("content.header.about").toUpperCase() }}</router-link>
       </div>
-      <div class="header-telephone">
+      <div class="header-phone">
         <img src='../assets/phone_header.png' class="icon" name="phone_header">
         <label for="phone_header">(123) 456-789</label>
       </div>
@@ -71,7 +72,7 @@ export default {
     }
     .header-logo,
     .header-nav,
-    .header-telephone,
+    .header-phone,
     .header-right {
       display: flex;
       align-items: center;

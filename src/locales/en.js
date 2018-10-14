@@ -29,6 +29,16 @@ export default {
       backpack: 'Backpack',
       carContent: 'Устройство легко устанавливается на крышу автомобиля',
       areasOfUse: 'Areas of use'
+    },
+    products: {
+      products: 'Products',
+      airScan: 'Air scan',
+      mobileScan: 'Mobile scan',
+      groundScan: 'Ground scan',
+      softwareScan: 'Software scan',
+      all: 'All',
+      svMobile: 'это технология высокоскоростного формирования трехмерных изображений объектов или поверхности земли в виде облаков точек, для создания высокоточных трехмерных цифровых моделей. Использование данных сканирования может применяться в большом количестве отраслей, от геодезии и архитектуры до компьютерных игр и виртуальной реальности.',
+      svUni: 'SV Uni'
     }
   }
 }
